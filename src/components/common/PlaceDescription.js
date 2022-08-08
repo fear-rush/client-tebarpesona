@@ -39,11 +39,11 @@ const PlaceDescription = () => {
       const fetchData = async () => {
         let fetchURL;
         if (locationRes === "sulamadaha") {
-          fetchURL = `${dbLocation}/api/blog-sulamadahas/${slug}`;
+          fetchURL = `https://api-sulamadaha.herokuapp.com/api/blog-sulamadahas/${slug}`;
         } else if (locationRes === "takome") {
-          fetchURL = `${dbLocation}/api/blog-takomes/${slug}`;
+          fetchURL = `https://api-takome.herokuapp.com/api/blog-takomes/${slug}`;
         } else if (locationRes === "tobololo") {
-          fetchURL = `${dbLocation}/api/blog-tobololos/${slug}`;
+          fetchURL = `https://api-tobololo.herokuapp.com/api/blog-tobololos/${slug}`;
         }
 
         const responseData = await axios
